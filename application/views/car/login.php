@@ -92,11 +92,7 @@
   							<input type="checkbox" value="remember-me" >
                     		Remember me
                 		</label>
-				</div>
-                <!-- <label class="checkbox pull-left">
-                    <input type="checkbox" value="remember-me" >
-                    Remember me
-                </label> -->
+				</div>                
                 <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
                 </form>
             </div>
