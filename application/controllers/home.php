@@ -6,11 +6,13 @@ class Home extends CI_Controller{
   		  		'heading' => 'My Heading',
   		  		'message' => 'My Message'
 			);
-
-
 		$this->load->view('car/header.php', $data);
 		$this->load->view('car/login.php');
 		$this->load->view('car/footer.php');
+	}
+	public function login(){
+		print_R($this->input->post);
+		print_R($_POST);
 	}
 }
 ?>
