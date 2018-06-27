@@ -85,6 +85,11 @@
                 <form class="form-signin" method="post" action="<?=base_url()?>home/login">                
                     <input type="text" class="form-control" placeholder="Email" name="username" required autofocus>
                     <input type="password" class="form-control" placeholder="Password" name="password" required>                
+                    <?php  
+                    if($_SESSION['login_wrong'] == "y"){
+                        echo "<span style='color:red'>please enter correct username & password</span>";
+                    }
+                    ?>
                     <button class="btn btn-lg btn-primary btn-block" type="submit">
                         Sign in</button>
                         <div class="checkbox pull-left">

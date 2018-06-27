@@ -26,6 +26,7 @@ class Home extends CI_Controller{
 			$this->load->view('car/home.php');
 			$this->footer();	
 		}else{
+			$_SESSION['login_wrong'] = "y";
 			redirect(base_url());
 		}
 	}
