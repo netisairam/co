@@ -86,7 +86,7 @@
                     <input type="text" class="form-control" placeholder="Email" name="username" required autofocus>
                     <input type="password" class="form-control" placeholder="Password" name="password" required>                
                     <?php  
-                    if($_SESSION['login_wrong'] == "y"){
+                    if($this->session->login_wrong == "y"){
                         echo "<span style='color:red'>please enter correct username & password</span>";
                     }
                     ?>
