@@ -5,7 +5,7 @@
 		}
 		public function get_records($que){
 			$query=$this->db->query($que);
-   			return $query->result();
+   			return $query->row_array();
 		} 	
 		public function get_edit_records($table, $value){
 			$this->db->where('id',$value);
