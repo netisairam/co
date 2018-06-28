@@ -14,9 +14,9 @@
         <!-- Collection of nav links and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li ><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
+                <li ><a href="<?=base_url();?>customer">Customers Details</a></li>
+                <li><a href="#">Purchase Details</a></li>
+                <li><a href="#">Stock</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?=base_url()?>home/logout">Logout</a></li>
