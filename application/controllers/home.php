@@ -1,5 +1,6 @@
 <?php
 class Home extends CI_Controller{
+
 	public function header($dat){
 		$this->load->view('car/header.php', $dat);
 		if($this->session->login == "y" && $this->session->login_page != 'y'){

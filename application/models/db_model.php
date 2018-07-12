@@ -5,7 +5,7 @@
 		}
 		public function get_records($que){
 			$query=$this->db->query($que);
-   			return $query->row_array();
+   			return $query->result_array();
 		} 	
 		public function get_edit_records($table, $value){
 			$this->db->where('id',$value);
@@ -13,14 +13,13 @@
 			$query= $this->db->get();
    			return $query->result();
 		}
-		public function update_record($table, $value, $id){
-			$this->db->where('id', $id);
-			$this->db->update($table, $value);           
+		public function update_record($table, $data, $where){
+			$this->db->update($table, $data, $where);         
 		}
-		function row_delete($table, $id)
+		function row_delete($table, $data)
 		{
-		   $this->db->where('id', $id);
-		   $this->db->delete($table); 
+		   // $this->db->where('id', $id);
+		   $this->db->delete($table, $data); 
 		}
 	}
 
