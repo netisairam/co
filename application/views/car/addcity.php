@@ -27,7 +27,7 @@
         <?php
           foreach($list as $norow => $field){
 
-              echo "<tr><td>".$field['city']."</td><td><a href='javascript:void(0)' onclick='change_from(\"".$field['city']."\", ".$field['id'].");'>Edit</a> | <a href='addcity_deletedb?id=".$field['id']."'>Delete</a></td></tr>";
+              echo "<tr><td>".ucwords($field['city'])."</td><td><a href='javascript:void(0)' onclick='change_from(\"".$field['city']."\", ".$field['id'].");'>Edit</a> | <a href='addcity_deletedb?id=".$field['id']."'>Delete</a></td></tr>";
           }
           ?>
     </tbody>
