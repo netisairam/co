@@ -1,5 +1,5 @@
 
-    <nav class="navbar navbar-default ">
+    <nav class="navbar navbar-default navbar-fixed-top ">
         <!-- Brand and toggle get grouped for better mobile display -->
       
         <div class="navbar-header">
@@ -18,7 +18,7 @@
                 <li><a href="#">Purchase Details</a></li>
                 <li><a href="#">Stock</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right ">
                 <li><a href="<?=base_url()?>home/logout">Logout</a></li>
             </ul>
         </div>

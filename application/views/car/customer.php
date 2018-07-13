@@ -1,4 +1,5 @@
 <div class="container">
+  <div style="margin-top:5%"></div>
   <ul class="list-inline">
     <li><a href="<?=base_url();?>customer/addcity">Add Customer City</a></li>
     <li><a href="<?=base_url();?>customer/addcustmer">Add Customer Details</a></li>
