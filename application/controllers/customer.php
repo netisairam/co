@@ -31,7 +31,7 @@ class Customer extends Home {
 			$data = array(
 	   		 		'title' => 'Customer Details',
 				);
-			$_que = "select * from cities " ;
+			$_que = "select * from cities" ;
 			$records = $this->db_model->get_records($_que);
 			$city_list['list']=$records;
 			 // print_r($records);
